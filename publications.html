@@ -64,7 +64,1339 @@
         </ul>
         <br>
         <div class="publications">
-          <div class="publication card odd" id="p-0">
+
+          <div class="publication card even" id="p-18">
+            <div class="row no-gutters">
+              <div class="col-auto d-none d-md-block p-2">
+                <div class="thumb" style="background-image:url(&#39;img/pub_cls/bmc2020.png&#39;)"></div>
+              </div>
+              <div class="col pl-2">
+                <div class="card-block py-2">
+                  <div class="bib">Yuanhe Tian, Wang Shen, Yan Song, Fei Xia, Min He & Kenli Li
+                    <em><a href="https://www.aclweb.org/anthology/2020.acl-main.735/" target="_blank">
+                      Improving biomedical named entity recognition with syntactic information
+                    </a><a
+                            href="publications.html"></a></em>
+                    BMC Bioinformatics volume 21
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                <div class="btn-group-vertical" role="group">
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-18-fulltext">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                              d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+                      </path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-18-abstract">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-18-bibtex">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
+                         height="18px">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-18-fulltext" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Fulltext options</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action"
+                                                              href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03834-6"
+                                                              target="_blank">https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03834-6</a></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-18-abstract" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Improving biomedical named entity recognition with syntactic information</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Background
+                  Biomedical named entity recognition (BioNER) is an important task for understanding biomedical texts,
+                  which can be challenging due to the lack of large-scale labeled training data and domain knowledge.
+                  To address the challenge, in addition to using powerful encoders (e.g., biLSTM and BioBERT), one
+                  possible method is to leverage extra knowledge that is easy to obtain. Previous studies have shown
+                  that auto-processed syntactic information can be a useful resource to improve model performance, but
+                  their approaches are limited to directly concatenating the embeddings of syntactic information to the
+                  input word embeddings. Therefore, such syntactic information is leveraged in an inflexible way, where
+                  inaccurate one may hurt model performance.
+
+                  Results
+                  In this paper, we propose BIOKMNER, a BioNER model for biomedical texts with key-value memory networks
+                  (KVMN) to incorporate auto-processed syntactic information. We evaluate BIOKMNER on six English
+                  biomedical datasets, where our method with KVMN outperforms the strong baseline method, namely,
+                  BioBERT, from the previous study on all datasets. Specifically, the F1 scores of our best performing
+                  model are 85.29% on BC2GM, 77.83% on JNLPBA, 94.22% on BC5CDR-chemical, 90.08% on NCBI-disease, 89.24%
+                  on LINNAEUS, and 76.33% on Species-800, where state-of-the-art performance is obtained on four of them
+                  (i.e., BC2GM, BC5CDR-chemical, NCBI-disease, and Species-800).
+
+                  Conclusion
+                  The experimental results on six English benchmark datasets demonstrate that auto-processed syntactic
+                  information can be a useful resource for BioNER and our method with KVMN can appropriately leverage
+                  such information to improve model performance.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-18-bibtex" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">BibTeX entry</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <pre>@article{tian2020improving,
+                    title={Improving biomedical named entity recognition with syntactic information},
+                    author={Tian, Yuanhe and Shen, Wang and Song, Yan and Xia, Fei and He, Min and Li, Kenli},
+                    journal={BMC bioinformatics},
+                    volume={21},
+                    number={1},
+                    pages={1--17},
+                    year={2020},
+                    publisher={BioMed Central}
+                  }</pre>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication card odd" id="p-17">
+            <div class="row no-gutters">
+              <div class="col-auto d-none d-md-block p-2">
+                <div class="thumb" style="background-image:url(&#39;img/pub_cls/coling2020.png&#39;)"></div>
+              </div>
+              <div class="col pl-2">
+                <div class="card-block py-2">
+                  <div class="bib">Jianfeng Liu, Ling Luo, Xiang Ao, Yan Song, Haoran Xu, Jian Ye
+                    <em><a href="https://www.aclweb.org/anthology/2020.acl-main.631" target="_blank">
+                      Meet Changes with Constancy: Learning Invariance in Multi-Source Translation
+                    </a><a
+                            href="publications.html"></a></em>
+                    Proceedings of the 28th International Conference on Computational Linguistics
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                <div class="btn-group-vertical" role="group">
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-17-fulltext">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                              d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+                      </path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-17-abstract">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-17-bibtex">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
+                         height="18px">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-17-fulltext" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Fulltext options</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action"
+                                                              href="https://www.aclweb.org/anthology/2020.coling-main.97.pdf"
+                                                              target="_blank">https://www.aclweb.org/anthology/2020.coling-main.97.pdf</a></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-17-abstract" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Meet Changes with Constancy: Learning Invariance in Multi-Source Translation</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Multi-source neural machine translation aims to translate from parallel sources of information (e.g.
+                  languages, images, etc.) to a single target language, which has shown better performance than most
+                  one-to-one systems. Despite the remarkable success of existing models, they usually neglect the fact
+                  that multiple source inputs may have inconsistencies. Such differences might bring noise to the task
+                  and limit the performance of existing multi-source NMT approaches due to their indiscriminate usage
+                  of input sources for target word predictions. In this paper, we attempt to leverage the potential
+                  complementary information among distinct sources and alleviate the occasional conflicts of them. To
+                  accomplish that, we propose a source invariance network to learn the invariant information of parallel
+                  sources. Such network can be easily integrated with multi-encoder based multi-source NMT methods (e.g.
+                  multi-encoder RNN and transformer) to enhance the translation results. Extensive experiments on two
+                  multi-source translation tasks demonstrate that the proposed approach not only achieves clear gains
+                  in translation quality but also captures implicit invariance between different sources.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-17-bibtex" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">BibTeX entry</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <pre>
+                    @inproceedings{liu-etal-2020-meet,
+                        title = "Meet Changes with Constancy: Learning Invariance in Multi-Source Translation",
+                        author = "Liu, Jianfeng  and
+                          Luo, Ling  and
+                          Ao, Xiang  and
+                          Song, Yan  and
+                          Xu, Haoran  and
+                          Ye, Jian",
+                        booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
+                        month = dec,
+                        year = "2020",
+                    }
+                  </pre>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication card even" id="p-16">
+            <div class="row no-gutters">
+              <div class="col-auto d-none d-md-block p-2">
+                <div class="thumb" style="background-image:url(&#39;img/pub_cls/coling2020.png&#39;)"></div>
+              </div>
+              <div class="col pl-2">
+                <div class="card-block py-2">
+                  <div class="bib">Guimin Chen, Yuanhe Tian, Yan Song
+                    <em><a href="https://aaai.org/ojs/index.php/AAAI/article/view/6476/6332" target="_blank">
+                      Joint Aspect Extraction and Sentiment Analysis with Directional Graph Convolutional Networks
+                    </a><a href="publications.html"></a></em>
+                    Proceedings of the 28th International Conference on Computational Linguistics</div>
+                </div>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                <div class="btn-group-vertical" role="group">
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-16-fulltext">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                              d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+                      </path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-16-abstract">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-16-bibtex">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
+                         height="18px">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-16-fulltext" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Fulltext options</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action"
+                                                              href="https://www.aclweb.org/anthology/2020.coling-main.24v2.pdf"
+                                                              target="_blank">https://www.aclweb.org/anthology/2020.coling-main.24v2.pdf</a></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-16-abstract" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Joint Aspect Extraction and Sentiment Analysis with Directional Graph Convolutional Networks</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  End-to-end aspect-based sentiment analysis (EASA) consists of two sub-tasks: the first extracts the
+                  aspect terms in a sentence and the second predicts the sentiment polarities for such terms. For EASA,
+                  compared to pipeline and multi-task approaches, joint aspect extraction and sentiment analysis provides
+                  a one-step solution to predict both aspect terms and their sentiment polarities through a single
+                  decoding process, which avoid the mismatches in between the results of aspect terms and sentiment
+                  polarities, as well as error propagation. Previous studies, especially recent ones, for this task
+                  focus on using powerful encoders (e.g., Bi-LSTM and BERT) to model contextual information from the
+                  input, with limited efforts paid to using advanced neural architectures (such as attentions and graph
+                  convolutional networks) or leveraging extra knowledge (such as syntactic information). To extend such
+                  efforts, in this paper, we propose directional graph convolutional networks (D-GCN) to jointly perform
+                  aspect extraction and sentiment analysis with encoding syntactic information, where dependency among
+                  words are integrated in our model to enhance its ability of representing input sentences and help EASA
+                  accordingly. Experimental results on three benchmark datasets demonstrate the effectiveness of our
+                  approach, where D-GCN achieves state-of-the-art performance on all datasets.</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-16-bibtex" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">BibTeX entry</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <pre>
+                    @inproceedings{chen-etal-2020-joint,
+                        title = "Joint Aspect Extraction and Sentiment Analysis with Directional Graph Convolutional Networks",
+                        author = "Chen, Guimin  and
+                          Tian, Yuanhe  and
+                          Song, Yan",
+                        booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
+                        month = dec,
+                        year = "2020",
+                    }
+                  </pre>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication card odd" id="p-15">
+            <div class="row no-gutters">
+              <div class="col-auto d-none d-md-block p-2">
+                <div class="thumb" style="background-image:url(&#39;img/pub_cls/coling2020.png&#39;)"></div>
+              </div>
+              <div class="col pl-2">
+                <div class="card-block py-2">
+                  <div class="bib">Yuanhe Tian, Yan Song, Fei Xia
+                    <em><a href="https://aclweb.org/anthology/2020.nlpmc-1.3.pdf" target="_blank">
+                      Joint Chinese Word Segmentation and Part-of-speech Tagging via Multi-channel Attention of Character N-grams
+                    </a><a href="publications.html"></a></em>
+                    Proceedings of the 28th International Conference on Computational Linguistics
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                <div class="btn-group-vertical" role="group">
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-15-fulltext">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                              d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+                      </path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-15-abstract">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-15-bibtex">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
+                         height="18px">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-15-fulltext" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Fulltext options</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action"
+                                                              href="https://www.aclweb.org/anthology/2020.coling-main.187.pdf"
+                                                              target="_blank">https://www.aclweb.org/anthology/2020.coling-main.187.pdf</a></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-15-abstract" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Joint Chinese Word Segmentation and Part-of-speech Tagging via Multi-channel Attention of Character N-grams</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Chinese word segmentation (CWS) and part-of-speech (POS) tagging are two fundamental tasks for Chinese
+                  language processing. Previous studies have demonstrated that jointly performing them can be an effective
+                  one-step solution to both tasks and this joint task can benefit from a good modeling of contextual
+                  features such as n-grams. However, their work on modeling such contextual features is limited to
+                  concatenating the features or their embeddings directly with the input embeddings without distinguishing
+                  whether the contextual features are important for the joint task in the specific context. Therefore,
+                  their models for the joint task could be misled by unimportant contextual information. In this paper,
+                  we propose a character-based neural model for the joint task enhanced by multi-channel attention of
+                  n-grams. In the attention module, n-gram features are categorized into different groups according to
+                  several criteria, and n-grams in each group are weighted and distinguished according to their importance
+                  for the joint task in the specific context. To categorize n-grams, we try two criteria in this study,
+                  i.e., n-gram frequency and length, so that n-grams having different capabilities of carrying contextual
+                  information are discriminatively learned by our proposed attention module. Experimental results on five
+                  benchmark datasets for CWS and POS tagging demonstrate that our approach outperforms strong baseline
+                  models and achieves state-of-the-art performance on all five datasets.
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-15-bibtex" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">BibTeX entry</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <pre>
+                    @inproceedings{tian-etal-2020-joint,
+                        title = "Joint {C}hinese Word Segmentation and Part-of-speech Tagging via Multi-channel Attention of Character N-grams",
+                        author = "Tian, Yuanhe  and
+                          Song, Yan  and
+                          Xia, Fei",
+                        booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
+                        month = dec,
+                        year = "2020",
+                    }
+                  </pre>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication card even" id="p-14">
+            <div class="row no-gutters">
+              <div class="col-auto d-none d-md-block p-2">
+                <div class="thumb" style="background-image:url(&#39;img/pub_cls/coling2020.png&#39;)"></div>
+              </div>
+              <div class="col pl-2">
+                <div class="card-block py-2">
+                  <div class="bib">Yan Song, Yuanhe Tian, Nan Wang, Fei Xia
+                    <em><a href="https://arxiv.org/abs/2004.09800" target="_blank">
+                      Summarizing Medical Conversations via Identifying Important Utterances
+                    </a><a href="publications.html"></a></em>
+                    Proceedings of the 28th International Conference on Computational Linguistics</div>
+                </div>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                <div class="btn-group-vertical" role="group">
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-14-fulltext">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                              d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+                      </path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-14-abstract">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-14-bibtex">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
+                         height="18px">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-14-fulltext" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Fulltext options</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action"
+                                                              href="https://www.aclweb.org/anthology/2020.coling-main.63.pdf"
+                                                              target="_blank">https://www.aclweb.org/anthology/2020.coling-main.63.pdf</a></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-14-abstract" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Summarizing Medical Conversations via Identifying Important Utterances</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Summarization is an important natural language processing (NLP) task in identifying key information
+                  from text. For conversations, the summarization systems need to extract salient contents from
+                  spontaneous utterances by multiple speakers. In a special task-oriented scenario, namely medical
+                  conversations between patients and doctors, the symptoms, diagnoses, and treatments could be highly
+                  important because the nature of such conversation is to find a medical solution to the problem proposed
+                  by the patients. Especially consider that current online medical platforms provide millions of public
+                  available conversations between real patients and doctors, where the patients propose their medical
+                  problems and the registered doctors offer diagnosis and treatment, a conversation in most cases could
+                  be too long and the key information is hard to be located. Therefore, summarizations to the patients’
+                  problems and the doctors’ treatments in the conversations can be highly useful, in terms of helping
+                  other patients with similar problems have a precise reference for potential medical solutions. In this
+                  paper, we focus on medical conversation summarization, using a dataset of medical conversations and
+                  corresponding summaries which were crawled from a well-known online healthcare service provider in
+                  China. We propose a hierarchical encoder-tagger model (HET) to generate summaries by identifying
+                  important utterances (with respect to problem proposing and solving) in the conversations. For the
+                  particular dataset used in this study, we show that high-quality summaries can be generated by
+                  extracting two types of utterances, namely, problem statements and treatment recommendations.
+                  Experimental results demonstrate that HET outperforms strong baselines and models from previous
+                  studies, and adding conversation-related features can further improve system performance.
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-14-bibtex" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">BibTeX entry</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <pre>
+                    @inproceedings{song-etal-2020-summarizing,
+                        title = "Summarizing Medical Conversations via Identifying Important Utterances",
+                        author = "Song, Yan  and
+                          Tian, Yuanhe  and
+                          Wang, Nan  and
+                          Xia, Fei",
+                        booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
+                        month = dec,
+                        year = "2020",
+                    }
+                  </pre>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication card odd" id="p-13">
+            <div class="row no-gutters">
+              <div class="col-auto d-none d-md-block p-2">
+                <div class="thumb" style="background-image:url(&#39;img/pub_cls/emnlp2020.png&#39;)"></div>
+              </div>
+              <div class="col pl-2">
+                <div class="card-block py-2">
+                  <div class="bib">Zhihong Chen, Yan Song, Tsung-Hui Chang, Xiang Wan
+                    <em><a href="https://www.aclweb.org/anthology/2020.emnlp-main.112.pdf" target="_blank">
+                      Generating Radiology Reports via Memory-driven Transformer
+                      </a><a href="#"></a></em>Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)</div>
+                </div>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                <div class="btn-group-vertical" role="group">
+                  <a class="btn btn-link p-1" href="#" data-toggle="modal" data-target="#p-13-fulltext">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                              d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+                      </path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="#" data-toggle="modal" data-target="#p-13-abstract">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="#" data-toggle="modal" data-target="#p-13-bibtex">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
+                         height="18px">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-13-fulltext" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Fulltext options</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action"
+                                                              href="https://www.aclweb.org/anthology/2020.emnlp-main.112.pdf"
+                                                              target="_blank">https://www.aclweb.org/anthology/2020.emnlp-main.112.pdf</a></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-13-abstract" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Generating Radiology Reports via Memory-driven Transformer</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Medical imaging is frequently used in clinical practice and trials for diagnosis and treatment. Writing
+                  imaging reports is time-consuming and can be error-prone for inexperienced radiologists. Therefore,
+                  automatically generating radiology reports is highly desired to lighten the workload of radiologists
+                  and accordingly promote clinical automation, which is an essential task to apply artificial intelligence
+                  to the medical domain. In this paper, we propose to generate radiology reports with memory-driven
+                  Transformer, where a relational memory is designed to record key information of the generation process
+                  and a memory-driven conditional layer normalization is applied to incorporating the memory into the
+                  decoder of Transformer. Experimental results on two prevailing radiology report datasets, IU X-Ray and
+                  MIMIC-CXR, show that our proposed approach outperforms previous models with respect to both language
+                  generation metrics and clinical evaluations. Particularly, this is the first work reporting the generation
+                  results on MIMIC-CXR to the best of our knowledge. Further analyses also demonstrate that our approach
+                  is able to generate long reports with necessary medical terms as well as meaningful image-text attention
+                  mappings.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-13-bibtex" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">BibTeX entry</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <pre>
+                    @inproceedings{chen-etal-2020-generating-radiology,
+                        title = "Generating Radiology Reports via Memory-driven Transformer",
+                        author = "Chen, Zhihong  and
+                          Song, Yan  and
+                          Chang, Tsung-Hui  and
+                          Wan, Xiang",
+                        booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+                        month = nov,
+                        year = "2020",
+                    }
+                  </pre>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication card even" id="p-12">
+            <div class="row no-gutters">
+              <div class="col-auto d-none d-md-block p-2">
+                <div class="thumb" style="background-image:url(&#39;img/pub_cls/emnlp2020.png&#39;)"></div>
+              </div>
+              <div class="col pl-2">
+                <div class="card-block py-2">
+
+                  <div class="bib">Yuyang Nie, Yuanhe Tian, Xiang Wan, Yan Song, Bo Dai
+                    <em><a href="https://www.aclweb.org/anthology/2020.emnlp-main.107.pdf" target="_blank">
+                      Named Entity Recognition for Social Media Texts with Semantic Augmentation
+                    </a><a href="#"></a>
+                    </em>Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)</div>
+                </div>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                <div class="btn-group-vertical" role="group">
+                  <a class="btn btn-link p-1" href="#" data-toggle="modal" data-target="#p-12-fulltext">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                              d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+                      </path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="#" data-toggle="modal" data-target="#p-12-abstract">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="#" data-toggle="modal" data-target="#p-12-bibtex">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
+                         height="18px">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-12-fulltext" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Fulltext options</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action"
+                                                              href="https://www.aclweb.org/anthology/2020.emnlp-main.107.pdf"
+                                                              target="_blank">https://www.aclweb.org/anthology/2020.emnlp-main.107.pdf</a></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-12-abstract" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Named Entity Recognition for Social Media Texts with Semantic Augmentation</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Existing approaches for named entity recognition suffer from data sparsity problems when conducted on
+                  short and informal texts, especially user-generated social media content. Semantic augmentation is a
+                  potential way to alleviate this problem. Given that rich semantic information is implicitly preserved
+                  in pre-trained word embeddings, they are potential ideal resources for semantic augmentation. In this
+                  paper, we propose a neural-based approach to NER for social media texts where both local (from running
+                  text) and augmented semantics are taken into account. In particular, we obtain the augmented semantic
+                  information from a large-scale corpus, and propose an attentive semantic augmentation module and a gate
+                  module to encode and aggregate such information, respectively. Extensive experiments are performed on
+                  three benchmark datasets collected from English and Chinese social media platforms, where the results
+                  demonstrate the superiority of our approach to previous studies across all three datasets.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-12-bibtex" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">BibTeX entry</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <pre>
+                    @inproceedings{nie-etal-2020-named,
+                        title = "Named Entity Recognition for Social Media Texts with Semantic Augmentation",
+                        author = "Nie, Yuyang  and
+                          Tian, Yuanhe  and
+                          Wan, Xiang  and
+                          Song, Yan  and
+                          Dai, Bo",
+                        booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+                        month = nov,
+                        year = "2020",
+                    }
+                  </pre>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication card odd" id="p-11">
+            <div class="row no-gutters">
+              <div class="col-auto d-none d-md-block p-2">
+                <div class="thumb" style="background-image:url(&#39;img/pub_cls/emnlp2020.png&#39;)"></div>
+              </div>
+              <div class="col pl-2">
+                <div class="card-block py-2">
+                  <div class="bib">Yuyang Nie, Yuanhe Tian, Yan Song, Xiang Ao, Xiang Wan
+                    <em><a href="https://www.aclweb.org/anthology/2020.acl-main.734/" target="_blank">Improving Named
+                      Entity Recognition with Attentive Ensemble of Syntactic Information</a><a href="publications.html"></a></em>
+                    Findings of the Association for Computational Linguistics: EMNLP 2020
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                <div class="btn-group-vertical" role="group">
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-11-fulltext">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                              d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+                      </path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-11-abstract">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-11-bibtex">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
+                         height="18px">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-11-fulltext" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Fulltext options</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action"
+                                                              href="https://www.aclweb.org/anthology/2020.findings-emnlp.378.pdf"
+                                                              target="_blank">https://www.aclweb.org/anthology/2020.findings-emnlp.378.pdf</a></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-11-abstract" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Improving Named Entity Recognition with Attentive Ensemble of Syntactic Information</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Named entity recognition (NER) is highly sensitive to sentential syntactic and semantic properties
+                  where entities may be extracted according to how they are used and placed in the running text. To
+                  model such properties, one could rely on existing resources to providing helpful knowledge to the NER
+                  task; some existing studies proved the effectiveness of doing so, and yet are limited in appropriately
+                  leveraging the knowledge such as distinguishing the important ones for particular context. In this
+                  paper, we improve NER by leveraging different types of syntactic information through attentive
+                  ensemble, which functionalizes by the proposed key-value memory networks, syntax attention, and the
+                  gate mechanism for encoding, weighting and aggregating such syntactic information, respectively.
+                  Experimental results on six English and Chinese benchmark datasets suggest the effectiveness of the
+                  proposed model and show that it outperforms previous studies on all experiment datasets.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-11-bibtex" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">BibTeX entry</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <pre>
+                    @inproceedings{nie-etal-2020-improving,
+                        title = "Improving Named Entity Recognition with Attentive Ensemble of Syntactic Information",
+                        author = "Nie, Yuyang  and
+                          Tian, Yuanhe  and
+                          Song, Yan  and
+                          Ao, Xiang  and
+                          Wan, Xiang",
+                        booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2020",
+                        month = nov,
+                        year = "2020",
+                    }
+                  </pre>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication card even" id="p-10">
+            <div class="row no-gutters">
+              <div class="col-auto d-none d-md-block p-2">
+                <div class="thumb" style="background-image:url(&#39;img/pub_cls/emnlp2020.png&#39;)"></div>
+              </div>
+              <div class="col pl-2">
+                <div class="card-block py-2">
+                  <div class="bib">Yuanhe Tian, Yan Song, Fei Xia
+                    <em><a href="https://www.aclweb.org/anthology/2020.emnlp-main.487v2.pdf" target="_blank">Supertagging
+                      Combinatory Categorial Grammar with Attentive Graph Convolutional Networks</a><a
+                            href="publications.html"></a></em>
+                    Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                <div class="btn-group-vertical" role="group">
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-10-fulltext">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                              d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+                      </path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-10-abstract">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-10-bibtex">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
+                         height="18px">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-10-fulltext" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Fulltext options</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action"
+                                                              href="https://www.aclweb.org/anthology/2020.emnlp-main.487v2.pdf"
+                                                              target="_blank">https://www.aclweb.org/anthology/2020.emnlp-main.487v2.pdf</a></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-10-abstract" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Supertagging Combinatory Categorial Grammar with Attentive Graph Convolutional Networks</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Supertagging is conventionally regarded as an important task for combinatory categorial grammar (CCG)
+                  parsing, where effective modeling of contextual information is highly important to this task. However,
+                  existing studies have made limited efforts to leverage contextual features except for applying powerful
+                  encoders (e.g., bi-LSTM). In this paper, we propose attentive graph convolutional networks to enhance
+                  neural CCG supertagging through a novel solution of leveraging contextual information. Specifically,
+                  we build the graph from chunks (n-grams) extracted from a lexicon and apply attention over the graph,
+                  so that different word pairs from the contexts within and across chunks are weighted in the model and
+                  facilitate the supertagging accordingly. The experiments performed on the CCGbank demonstrate that our
+                  approach outperforms all previous studies in terms of both supertagging and parsing. Further analyses
+                  illustrate the effectiveness of each component in our approach to discriminatively learn from word
+                  pairs to enhance CCG supertagging.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-10-bibtex" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">BibTeX entry</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <pre>
+                    @inproceedings{tian-etal-2020-supertagging,
+                        title = "Supertagging {C}ombinatory {C}ategorial {G}rammar with Attentive Graph Convolutional Networks",
+                        author = "Tian, Yuanhe  and
+                          Song, Yan  and
+                          Xia, Fei",
+                        booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+                        year = "2020",
+                    }
+                  </pre>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication card odd" id="p-9">
+            <div class="row no-gutters">
+              <div class="col-auto d-none d-md-block p-2">
+                <div class="thumb" style="background-image:url(&#39;img/pub_cls/emnlp2020.png&#39;)"></div>
+              </div>
+              <div class="col pl-2">
+                <div class="card-block py-2">
+                  <div class="bib">Yuanhe Tian, Yan Song, Fei Xia, Tong Zhang
+                    <em><a href="https://www.aclweb.org/anthology/2020.findings-emnlp.153.pdf" target="_blank">Improving
+                      Constituency Parsing with Span Attention</a><a
+                            href="publications.html"></a></em>
+                    Findings of the Association for Computational Linguistics: EMNLP 2020
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                <div class="btn-group-vertical" role="group">
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-9-fulltext">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                              d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+                      </path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-9-abstract">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-9-bibtex">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
+                         height="18px">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-9-fulltext" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Fulltext options</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action"
+                                                              href="https://www.aclweb.org/anthology/2020.findings-emnlp.153.pdf"
+                                                              target="_blank">https://www.aclweb.org/anthology/2020.findings-emnlp.153.pdf</a></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-9-abstract" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Improving Constituency Parsing with Span Attention</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Constituency parsing is a fundamental and important task for natural language understanding, where a
+                  good representation of contextual information can help this task. N-grams, which is a conventional type
+                  of feature for contextual information, have been demonstrated to be useful in many tasks, and thus could
+                  also be beneficial for constituency parsing if they are appropriately modeled. In this paper, we propose
+                  span attention for neural chart-based constituency parsing to leverage n-gram information. Considering
+                  that current chart-based parsers with Transformer-based encoder represent spans by subtraction of the
+                  hidden states at the span boundaries, which may cause information loss especially for long spans, we
+                  incorporate n-grams into span representations by weighting them according to their contributions to the
+                  parsing process. Moreover, we propose categorical span attention to further enhance the model by weighting
+                  n-grams within different length categories, and thus benefit long-sentence parsing. Experimental results
+                  on three widely used benchmark datasets demonstrate the effectiveness of our approach in parsing Arabic,
+                  Chinese, and English, where state-of-the-art performance is obtained by our approach on all of them.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-9-bibtex" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">BibTeX entry</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <pre>
+                    @inproceedings{tian-etal-2020-improving,
+                        title = "Improving Constituency Parsing with Span Attention",
+                        author = "Tian, Yuanhe  and
+                          Song, Yan  and
+                          Xia, Fei  and
+                          Zhang, Tong",
+                        booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2020",
+                        month = nov,
+                        year = "2020",
+                    }
+                  </pre>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication card even" id="p-8">
+            <div class="row no-gutters">
+              <div class="col-auto d-none d-md-block p-2">
+                <div class="thumb" style="background-image:url(&#39;img/pub_cls/emnlp2020.png&#39;)"></div>
+              </div>
+              <div class="col pl-2">
+                <div class="card-block py-2">
+                  <div class="bib">Shizhe Diao, Jiaxin Bai, Yan Song, Tong Zhang, Yonggang Wang
+                    <em><a href="https://www.aclweb.org/anthology/2020.findings-emnlp.425.pdf" target="_blank">ZEN:
+                      Pre-training Chinese Text Encoder Enhanced by N-gram Representations</a><a href="publications.html"></a></em>
+                    Findings of the Association for Computational Linguistics: EMNLP 2020</div>
+                </div>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                <div class="btn-group-vertical" role="group">
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-8-fulltext">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                              d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+                      </path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-8-abstract">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                         fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-8-bibtex">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
+                         height="18px">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-8-fulltext" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Fulltext options</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action"
+                                                              href="https://www.aclweb.org/anthology/2020.findings-emnlp.425.pdf"
+                                                              target="_blank">https://www.aclweb.org/anthology/2020.findings-emnlp.425.pdf</a></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-8-abstract" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">ZEN: Pre-training Chinese Text Encoder Enhanced by N-gram Representations</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  The pre-training of text encoders normally processes text as a sequence of tokens corresponding to small
+                  text units, such as word pieces in English and characters in Chinese. It omits information carried by
+                  larger text granularity, and thus the encoders cannot easily adapt to certain combinations of characters.
+                  This leads to a loss of important semantic information, which is especially problematic for Chinese because
+                  the language does not have explicit word boundaries. In this paper, we propose ZEN, a BERT-based Chinese
+                  text encoder enhanced by n-gram representations, where different combinations of characters are considered
+                  during training, thus potential word or phrase boundaries are explicitly pre-trained and fine-tuned with
+                  the character encoder (BERT). Therefore ZEN incorporates the comprehensive information of both the character
+                  sequence and words or phrases it contains. Experimental results illustrated the effectiveness of ZEN on a
+                  series of Chinese NLP tasks, where state-of-the-art results is achieved on most tasks with requiring less
+                  resource than other published encoders. It is also shown that reasonable performance is obtained when ZEN
+                  is trained on a small corpus, which is important for applying pre-training techniques to scenarios with limited
+                  data. The code and pre-trained models of ZEN are available at https://github.com/sinovation/ZEN.</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-8-bibtex" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">BibTeX entry</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <pre>@inproceedings{diao-etal-2020-zen,
+                      title = "{ZEN}: Pre-training {C}hinese Text Encoder Enhanced by N-gram Representations",
+                  author = "Diao, Shizhe  and
+                  Bai, Jiaxin  and
+                  Song, Yan  and
+                  Zhang, Tong  and
+                  Wang, Yonggang",
+                  booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2020",
+                  month = nov,
+                  year = "2020",
+                  publisher = "Association for Computational Linguistics",
+                  }</pre>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication card odd" id="p-7">
             <div class="row no-gutters">
               <div class="col-auto d-none d-md-block p-2">
                 <div class="thumb" style="background-image:url(&#39;img/pub_cls/acl2020.png&#39;)"></div>
@@ -80,7 +1412,7 @@
               </div>
               <div class="col-auto d-none d-md-block">
                 <div class="btn-group-vertical" role="group">
-                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-0-fulltext">
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-7-fulltext">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
                       fill="currentColor">
                       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -88,13 +1420,13 @@
                         d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
                       </path>
                     </svg></a>
-                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-0-abstract">
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-7-abstract">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
                       fill="currentColor">
                       <path d="M0 0h24v24H0z" fill="none"></path>
                       <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
                     </svg></a>
-                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-0-bibtex">
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-7-bibtex">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
                       height="18px">
                       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -104,7 +1436,7 @@
               </div>
             </div>
           </div>
-          <div class="modal" id="p-0-fulltext" tabindex="-1" role="dialog">
+          <div class="modal" id="p-7-fulltext" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
@@ -124,7 +1456,7 @@
               </div>
             </div>
           </div>
-          <div class="modal" id="p-0-abstract" tabindex="-1" role="dialog">
+          <div class="modal" id="p-7-abstract" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
@@ -152,7 +1484,7 @@
               </div>
             </div>
           </div>
-          <div class="modal" id="p-0-bibtex" tabindex="-1" role="dialog">
+          <div class="modal" id="p-7-bibtex" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
@@ -177,7 +1509,7 @@
             </div>
           </div>
 
-          <div class="publication card even" id="p-1">
+          <div class="publication card even" id="p-6">
             <div class="row no-gutters">
               <div class="col-auto d-none d-md-block p-2">
                 <div class="thumb" style="background-image:url(&#39;img/pub_cls/acl2020.png&#39;)"></div>
@@ -194,7 +1526,7 @@
               </div>
               <div class="col-auto d-none d-md-block">
                 <div class="btn-group-vertical" role="group">
-                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-1-fulltext">
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-6-fulltext">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
                       fill="currentColor">
                       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -202,13 +1534,13 @@
                         d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
                       </path>
                     </svg></a>
-                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-1-abstract">
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-6-abstract">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
                       fill="currentColor">
                       <path d="M0 0h24v24H0z" fill="none"></path>
                       <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
                     </svg></a>
-                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-1-bibtex">
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-6-bibtex">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
                       height="18px">
                       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -218,7 +1550,7 @@
               </div>
             </div>
           </div>
-          <div class="modal" id="p-1-fulltext" tabindex="-1" role="dialog">
+          <div class="modal" id="p-6-fulltext" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
@@ -238,7 +1570,7 @@
               </div>
             </div>
           </div>
-          <div class="modal" id="p-1-abstract" tabindex="-1" role="dialog">
+          <div class="modal" id="p-6-abstract" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
@@ -270,7 +1602,7 @@
               </div>
             </div>
           </div>
-          <div class="modal" id="p-1-bibtex" tabindex="-1" role="dialog">
+          <div class="modal" id="p-6-bibtex" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
@@ -294,7 +1626,8 @@
               </div>
             </div>
           </div>
-          <div class="publication card odd" id="p-2">
+
+          <div class="publication card odd" id="p-5">
             <div class="row no-gutters">
               <div class="col-auto d-none d-md-block p-2">
                 <div class="thumb" style="background-image:url(&#39;img/pub_cls/acl2020.png&#39;)"></div>
@@ -307,349 +1640,6 @@
                         href="publications.html"></a></em>
                     Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics. (2020)
                   </div>
-                </div>
-              </div>
-              <div class="col-auto d-none d-md-block">
-                <div class="btn-group-vertical" role="group">
-                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-2-fulltext">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
-                      fill="currentColor">
-                      <path d="M0 0h24v24H0z" fill="none"></path>
-                      <path
-                        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
-                      </path>
-                    </svg></a>
-                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-2-abstract">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
-                      fill="currentColor">
-                      <path d="M0 0h24v24H0z" fill="none"></path>
-                      <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
-                    </svg></a>
-                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-2-bibtex">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
-                      height="18px">
-                      <path d="M0 0h24v24H0z" fill="none"></path>
-                      <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
-                    </svg></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal" id="p-2-fulltext" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Fulltext options</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action"
-                      href="https://www.aclweb.org/anthology/2020.acl-main.631"
-                      target="_blank">https://www.aclweb.org/anthology/2020.acl-main.631</a></div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal" id="p-2-abstract" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Conditional Augmentation for Aspect Term Extraction via Masked
-                    Sequence-to-Sequence Generation</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  Aspect term extraction aims to extract aspect
-                  terms from review texts as opinion targets for
-                  sentiment analysis. One of the big challenges
-                  with this task is the lack of sufficient annotated
-                  data. While data augmentation is potentially
-                  an effective technique to address the above
-                  issue, it is uncontrollable as it may change
-                  aspect words and aspect labels unexpectedly.
-                  In this paper, we formulate the data augmentation as a conditional generation task: generating a new
-                  sentence while preserving the
-                  original opinion targets and labels. We propose a masked sequence-to-sequence method
-                  for conditional augmentation of aspect term
-                  extraction. Unlike existing augmentation approaches, ours is controllable and allows us
-                  to generate more diversified sentences. Experimental results confirm that our method alleviates the
-                  data scarcity problem significantly. It
-                  also effectively boosts the performances of several current models for aspect term extraction.
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal" id="p-2-bibtex" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">BibTeX entry</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <pre>@article{li2020conditional,
-                      title={Conditional Augmentation for Aspect Term Extraction via Masked Sequence-to-Sequence Generation},
-                      author={Li, Kun and Chen, Chengbo and Quan, Xiaojun and Ling, Qing and Song, Yan},
-                      journal={arXiv preprint arXiv:2004.14769},
-                      year={2020}
-                    }</pre>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="publication card even" id="p-3">
-            <div class="row no-gutters">
-              <div class="col-auto d-none d-md-block p-2">
-                <div class="thumb" style="background-image:url(&#39;img/pub_cls/aaai.jpg&#39;)"></div>
-              </div>
-              <div class="col pl-2">
-                <div class="card-block py-2">
-                  <div class="bib">Kun Xu,&nbsp;Linfeng Song,&nbsp;Yangsong Feng,&nbsp;Yan Song,&nbsp;Dong Yu
-                    <em><a href="https://aaai.org/ojs/index.php/AAAI/article/view/6476/6332" target="_blank">Coordinated
-                        Reasoning for Cross-Lingual Knowledge Graph Alignment</a><a href="publications.html"></a></em>
-                    The 34th Annual Meeting of the Association for the Advancement of Artificial Intelligence.
-                    (2020)</div>
-                </div>
-              </div>
-              <div class="col-auto d-none d-md-block">
-                <div class="btn-group-vertical" role="group">
-                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-3-fulltext">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
-                      fill="currentColor">
-                      <path d="M0 0h24v24H0z" fill="none"></path>
-                      <path
-                        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
-                      </path>
-                    </svg></a>
-                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-3-abstract">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
-                      fill="currentColor">
-                      <path d="M0 0h24v24H0z" fill="none"></path>
-                      <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
-                    </svg></a>
-                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-3-bibtex">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
-                      height="18px">
-                      <path d="M0 0h24v24H0z" fill="none"></path>
-                      <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
-                    </svg></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal" id="p-3-fulltext" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Fulltext options</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action"
-                      href="https://aaai.org/ojs/index.php/AAAI/article/view/6476/6332"
-                      target="_blank">https://aaai.org/ojs/index.php/AAAI/article/view/6476/6332</a></div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal" id="p-3-abstract" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Coordinated Reasoning for Cross-Lingual Knowledge Graph Alignment</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  Existing entity alignment methods mainly vary on the choices of encoding the knowledge graph, but they
-                  typically use the same decoding method, which independently chooses the local optimal match for each
-                  source entity. This decoding method may not only cause the "many-to-one" problem but also neglect the
-                  coordinated nature of this task, that is, each alignment decision may highly correlate to the other
-                  decisions. In this paper, we introduce two coordinated reasoning methods, i.e., the Easy-to-Hard
-                  decoding strategy and joint entity alignment algorithm. Specifically, the Easy-to-Hard strategy first
-                  retrieves the model-confident alignments from the predicted results and then incorporates them as
-                  additional knowledge to resolve the remaining model-uncertain alignments. To achieve this, we further
-                  propose an enhanced alignment model that is built on the current state-of-the-art baseline. In
-                  addition, to address the many-to-one problem, we propose to jointly predict entity alignments so that
-                  the one-to-one constraint can be naturally incorporated into the alignment prediction. Experimental
-                  results show that our model achieves the state-of-the-art performance and our reasoning methods can
-                  also significantly improve existing baselines.</div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal" id="p-3-bibtex" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">BibTeX entry</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <pre>@article{xu2020coordinated,
-                      title={Coordinated Reasoning for Cross-Lingual Knowledge Graph Alignment},
-                      author={Xu, Kun and Song, Linfeng and Feng, Yansong and Song, Yan and Yu, Dong},
-                      journal={arXiv preprint arXiv:2001.08728},
-                      year={2020}
-                    }</pre>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="publication card odd" id="p-4">
-            <div class="row no-gutters">
-              <div class="col-auto d-none d-md-block p-2">
-                <div class="thumb" style="background-image:url(&#39;img/pub_cls/acl2020.png&#39;)"></div>
-              </div>
-              <div class="col pl-2">
-                <div class="card-block py-2">
-                  <div class="bib">Nan Wang,&nbsp;Yan Song,&nbsp;Fei Xia
-                    <em><a href="https://aclweb.org/anthology/2020.nlpmc-1.3.pdf" target="_blank">Studying Challenges in
-                        Medical
-                        Conversation with Structured Annotation</a><a href="publications.html"></a></em>
-                    Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics. (2020)
-                  </div>
-                </div>
-              </div>
-              <div class="col-auto d-none d-md-block">
-                <div class="btn-group-vertical" role="group">
-                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-4-fulltext">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
-                      fill="currentColor">
-                      <path d="M0 0h24v24H0z" fill="none"></path>
-                      <path
-                        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
-                      </path>
-                    </svg></a>
-                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-4-abstract">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
-                      fill="currentColor">
-                      <path d="M0 0h24v24H0z" fill="none"></path>
-                      <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
-                    </svg></a>
-                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-4-bibtex">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
-                      height="18px">
-                      <path d="M0 0h24v24H0z" fill="none"></path>
-                      <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
-                    </svg></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal" id="p-4-fulltext" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Fulltext options</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action"
-                      href="https://www.aclweb.org/anthology/2020.nlpmc-1.3.pdf"
-                      target="_blank">https://www.aclweb.org/anthology/2020.nlpmc-1.3.pdf</a></div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal" id="p-4-abstract" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Studying Challenges in Medical Conversation with Structured Annotation</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  Medical conversation is a central part of medical care. Yet, the current state and quality
-                  of medical conversation is far from perfect.
-                  Therefore, a substantial amount of research
-                  has been done to obtain a better understanding
-                  of medical conversation and to address its practical challenges and dilemmas. In line with
-                  this stream of research, we have developed a
-                  multi-layer structure annotation scheme to analyze medical conversation, and are using the
-                  scheme to construct a corpus of naturally occurring medical conversation in Chinese pediatric primary
-                  care setting. Some of the preliminary findings are reported regarding 1) how a
-                  medical conversation starts, 2) where communication problems tend to occur, and 3) how
-                  physicians close a conversation. Challenges
-                  and opportunities for research on medical conversation
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal" id="p-4-bibtex" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">BibTeX entry</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <pre>@inproceedings{wang2020studying,
-                      title={Studying Challenges in Medical Conversation with Structured Annotation},
-                      author={Wang, Nan and Song, Yan and Xia, Fei},
-                      booktitle={Proceedings of the First Workshop on Natural Language Processing for Medical Conversations},
-                      pages={12--21},
-                      year={2020}
-                    }</pre>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="publication card even" id="p-5">
-            <div class="row no-gutters">
-              <div class="col-auto d-none d-md-block p-2">
-                <div class="thumb" style="background-image:url(&#39;img/pub_cls/arxiv.png&#39;)"></div>
-              </div>
-              <div class="col pl-2">
-                <div class="card-block py-2">
-                  <div class="bib">Shizhe Diao,&nbsp;Yan Song,&nbsp;Tong Zhang
-                    <em><a href="https://arxiv.org/abs/2004.09800" target="_blank">Keyphrase Generation with
-                        Cross-Document Attention</a><a href="publications.html"></a></em>
-                    ArXiv preprint arXiv:2004.09800. (2020)</div>
                 </div>
               </div>
               <div class="col-auto d-none d-md-block">
@@ -689,7 +1679,8 @@
                 </div>
                 <div class="modal-body">
                   <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action"
-                      href="https://arxiv.org/abs/2004.09800" target="_blank">https://arxiv.org/abs/2004.09800</a></div>
+                      href="https://www.aclweb.org/anthology/2020.acl-main.631"
+                      target="_blank">https://www.aclweb.org/anthology/2020.acl-main.631</a></div>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -698,6 +1689,350 @@
             </div>
           </div>
           <div class="modal" id="p-5-abstract" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Conditional Augmentation for Aspect Term Extraction via Masked
+                    Sequence-to-Sequence Generation</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Aspect term extraction aims to extract aspect
+                  terms from review texts as opinion targets for
+                  sentiment analysis. One of the big challenges
+                  with this task is the lack of sufficient annotated
+                  data. While data augmentation is potentially
+                  an effective technique to address the above
+                  issue, it is uncontrollable as it may change
+                  aspect words and aspect labels unexpectedly.
+                  In this paper, we formulate the data augmentation as a conditional generation task: generating a new
+                  sentence while preserving the
+                  original opinion targets and labels. We propose a masked sequence-to-sequence method
+                  for conditional augmentation of aspect term
+                  extraction. Unlike existing augmentation approaches, ours is controllable and allows us
+                  to generate more diversified sentences. Experimental results confirm that our method alleviates the
+                  data scarcity problem significantly. It
+                  also effectively boosts the performances of several current models for aspect term extraction.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-5-bibtex" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">BibTeX entry</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <pre>@article{li2020conditional,
+                      title={Conditional Augmentation for Aspect Term Extraction via Masked Sequence-to-Sequence Generation},
+                      author={Li, Kun and Chen, Chengbo and Quan, Xiaojun and Ling, Qing and Song, Yan},
+                      journal={arXiv preprint arXiv:2004.14769},
+                      year={2020}
+                    }</pre>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication card even" id="p-4">
+            <div class="row no-gutters">
+              <div class="col-auto d-none d-md-block p-2">
+                <div class="thumb" style="background-image:url(&#39;img/pub_cls/aaai.jpg&#39;)"></div>
+              </div>
+              <div class="col pl-2">
+                <div class="card-block py-2">
+                  <div class="bib">Kun Xu,&nbsp;Linfeng Song,&nbsp;Yangsong Feng,&nbsp;Yan Song,&nbsp;Dong Yu
+                    <em><a href="https://aaai.org/ojs/index.php/AAAI/article/view/6476/6332" target="_blank">Coordinated
+                        Reasoning for Cross-Lingual Knowledge Graph Alignment</a><a href="publications.html"></a></em>
+                    The 34th Annual Meeting of the Association for the Advancement of Artificial Intelligence.
+                    (2020)</div>
+                </div>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                <div class="btn-group-vertical" role="group">
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-4-fulltext">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                      fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+                      </path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-4-abstract">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                      fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-4-bibtex">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
+                      height="18px">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-4-fulltext" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Fulltext options</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action"
+                      href="https://aaai.org/ojs/index.php/AAAI/article/view/6476/6332"
+                      target="_blank">https://aaai.org/ojs/index.php/AAAI/article/view/6476/6332</a></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-4-abstract" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Coordinated Reasoning for Cross-Lingual Knowledge Graph Alignment</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Existing entity alignment methods mainly vary on the choices of encoding the knowledge graph, but they
+                  typically use the same decoding method, which independently chooses the local optimal match for each
+                  source entity. This decoding method may not only cause the "many-to-one" problem but also neglect the
+                  coordinated nature of this task, that is, each alignment decision may highly correlate to the other
+                  decisions. In this paper, we introduce two coordinated reasoning methods, i.e., the Easy-to-Hard
+                  decoding strategy and joint entity alignment algorithm. Specifically, the Easy-to-Hard strategy first
+                  retrieves the model-confident alignments from the predicted results and then incorporates them as
+                  additional knowledge to resolve the remaining model-uncertain alignments. To achieve this, we further
+                  propose an enhanced alignment model that is built on the current state-of-the-art baseline. In
+                  addition, to address the many-to-one problem, we propose to jointly predict entity alignments so that
+                  the one-to-one constraint can be naturally incorporated into the alignment prediction. Experimental
+                  results show that our model achieves the state-of-the-art performance and our reasoning methods can
+                  also significantly improve existing baselines.</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-4-bibtex" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">BibTeX entry</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <pre>@article{xu2020coordinated,
+                      title={Coordinated Reasoning for Cross-Lingual Knowledge Graph Alignment},
+                      author={Xu, Kun and Song, Linfeng and Feng, Yansong and Song, Yan and Yu, Dong},
+                      journal={arXiv preprint arXiv:2001.08728},
+                      year={2020}
+                    }</pre>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication card odd" id="p-3">
+            <div class="row no-gutters">
+              <div class="col-auto d-none d-md-block p-2">
+                <div class="thumb" style="background-image:url(&#39;img/pub_cls/acl2020.png&#39;)"></div>
+              </div>
+              <div class="col pl-2">
+                <div class="card-block py-2">
+                  <div class="bib">Nan Wang,&nbsp;Yan Song,&nbsp;Fei Xia
+                    <em><a href="https://aclweb.org/anthology/2020.nlpmc-1.3.pdf" target="_blank">Studying Challenges in
+                        Medical
+                        Conversation with Structured Annotation</a><a href="publications.html"></a></em>
+                    Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics. (2020)
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                <div class="btn-group-vertical" role="group">
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-3-fulltext">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                      fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+                      </path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-3-abstract">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                      fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-3-bibtex">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
+                      height="18px">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-3-fulltext" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Fulltext options</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action"
+                      href="https://www.aclweb.org/anthology/2020.nlpmc-1.3.pdf"
+                      target="_blank">https://www.aclweb.org/anthology/2020.nlpmc-1.3.pdf</a></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-3-abstract" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Studying Challenges in Medical Conversation with Structured Annotation</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Medical conversation is a central part of medical care. Yet, the current state and quality
+                  of medical conversation is far from perfect.
+                  Therefore, a substantial amount of research
+                  has been done to obtain a better understanding
+                  of medical conversation and to address its practical challenges and dilemmas. In line with
+                  this stream of research, we have developed a
+                  multi-layer structure annotation scheme to analyze medical conversation, and are using the
+                  scheme to construct a corpus of naturally occurring medical conversation in Chinese pediatric primary
+                  care setting. Some of the preliminary findings are reported regarding 1) how a
+                  medical conversation starts, 2) where communication problems tend to occur, and 3) how
+                  physicians close a conversation. Challenges
+                  and opportunities for research on medical conversation
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-3-bibtex" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">BibTeX entry</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <pre>@inproceedings{wang2020studying,
+                      title={Studying Challenges in Medical Conversation with Structured Annotation},
+                      author={Wang, Nan and Song, Yan and Xia, Fei},
+                      booktitle={Proceedings of the First Workshop on Natural Language Processing for Medical Conversations},
+                      pages={12--21},
+                      year={2020}
+                    }</pre>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication card even" id="p-2">
+            <div class="row no-gutters">
+              <div class="col-auto d-none d-md-block p-2">
+                <div class="thumb" style="background-image:url(&#39;img/pub_cls/arxiv.png&#39;)"></div>
+              </div>
+              <div class="col pl-2">
+                <div class="card-block py-2">
+                  <div class="bib">Shizhe Diao,&nbsp;Yan Song,&nbsp;Tong Zhang
+                    <em><a href="https://arxiv.org/abs/2004.09800" target="_blank">Keyphrase Generation with
+                        Cross-Document Attention</a><a href="publications.html"></a></em>
+                    ArXiv preprint arXiv:2004.09800. (2020)</div>
+                </div>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                <div class="btn-group-vertical" role="group">
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-2-fulltext">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                      fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+                      </path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-2-abstract">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                      fill="currentColor">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
+                    </svg></a>
+                  <a class="btn btn-link p-1" href="publications.html" data-toggle="modal" data-target="#p-2-bibtex">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
+                      height="18px">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-2-fulltext" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Fulltext options</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action"
+                      href="https://arxiv.org/abs/2004.09800" target="_blank">https://arxiv.org/abs/2004.09800</a></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="p-2-abstract" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
@@ -728,7 +2063,7 @@
               </div>
             </div>
           </div>
-          <div class="modal" id="p-5-bibtex" tabindex="-1" role="dialog">
+          <div class="modal" id="p-2-bibtex" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
@@ -751,7 +2086,8 @@
               </div>
             </div>
           </div>
-          <div class="publication card odd" id="p-6">
+
+          <div class="publication card odd" id="p-1">
             <div class="row no-gutters">
               <div class="col-auto d-none d-md-block p-2">
                 <div class="thumb" style="background-image:url(&#39;img/pub_cls/bioinfomatics.gif&#39;)"></div>
@@ -766,7 +2102,7 @@
               </div>
               <div class="col-auto d-none d-md-block">
                 <div class="btn-group-vertical" role="group">
-                  <a class="btn btn-link p-1" href="#" data-toggle="modal" data-target="#p-6-fulltext">
+                  <a class="btn btn-link p-1" href="#" data-toggle="modal" data-target="#p-1-fulltext">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
                       fill="currentColor">
                       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -774,13 +2110,13 @@
                         d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
                       </path>
                     </svg></a>
-                  <a class="btn btn-link p-1" href="#" data-toggle="modal" data-target="#p-6-abstract">
+                  <a class="btn btn-link p-1" href="#" data-toggle="modal" data-target="#p-1-abstract">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
                       fill="currentColor">
                       <path d="M0 0h24v24H0z" fill="none"></path>
                       <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
                     </svg></a>
-                  <a class="btn btn-link p-1" href="#" data-toggle="modal" data-target="#p-6-bibtex">
+                  <a class="btn btn-link p-1" href="#" data-toggle="modal" data-target="#p-1-bibtex">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
                       height="18px">
                       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -790,7 +2126,7 @@
               </div>
             </div>
           </div>
-          <div class="modal" id="p-6-fulltext" tabindex="-1" role="dialog">
+          <div class="modal" id="p-1-fulltext" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
@@ -810,7 +2146,7 @@
               </div>
             </div>
           </div>
-          <div class="modal" id="p-6-abstract" tabindex="-1" role="dialog">
+          <div class="modal" id="p-1-abstract" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
@@ -848,7 +2184,7 @@
               </div>
             </div>
           </div>
-          <div class="modal" id="p-6-bibtex" tabindex="-1" role="dialog">
+          <div class="modal" id="p-1-bibtex" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
@@ -876,7 +2212,7 @@
             </div>
           </div>
 
-          <div class="publication card even" id="p-7">
+          <div class="publication card even" id="p-0">
             <div class="row no-gutters">
               <div class="col-auto d-none d-md-block p-2">
                 <div class="thumb" style="background-image:url(&#39;img/pub_cls/bioinfomatics.gif&#39;)"></div>
@@ -892,7 +2228,7 @@
               </div>
               <div class="col-auto d-none d-md-block">
                 <div class="btn-group-vertical" role="group">
-                  <a class="btn btn-link p-1" href="#" data-toggle="modal" data-target="#p-7-fulltext">
+                  <a class="btn btn-link p-1" href="#" data-toggle="modal" data-target="#p-0-fulltext">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
                       fill="currentColor">
                       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -900,13 +2236,13 @@
                         d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
                       </path>
                     </svg></a>
-                  <a class="btn btn-link p-1" href="#" data-toggle="modal" data-target="#p-7-abstract">
+                  <a class="btn btn-link p-1" href="#" data-toggle="modal" data-target="#p-0-abstract">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
                       fill="currentColor">
                       <path d="M0 0h24v24H0z" fill="none"></path>
                       <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path>
                     </svg></a>
-                  <a class="btn btn-link p-1" href="#" data-toggle="modal" data-target="#p-7-bibtex">
+                  <a class="btn btn-link p-1" href="#" data-toggle="modal" data-target="#p-0-bibtex">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18px"
                       height="18px">
                       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -916,7 +2252,7 @@
               </div>
             </div>
           </div>
-          <div class="modal" id="p-7-fulltext" tabindex="-1" role="dialog">
+          <div class="modal" id="p-0-fulltext" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
@@ -936,7 +2272,7 @@
               </div>
             </div>
           </div>
-          <div class="modal" id="p-7-abstract" tabindex="-1" role="dialog">
+          <div class="modal" id="p-0-abstract" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
@@ -970,7 +2306,7 @@ complex phenotypes.
               </div>
             </div>
           </div>
-          <div class="modal" id="p-7-bibtex" tabindex="-1" role="dialog">
+          <div class="modal" id="p-0-bibtex" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
